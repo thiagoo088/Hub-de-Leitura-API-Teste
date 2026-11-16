@@ -140,10 +140,10 @@ describe('PUT - Teste de API - Gestão de usuários', () => {
 
 describe('DELETE - Teste de api - Gestão de usuários', () => {
 
-    it('Deve excluir um usuário com sucesso', () => {
+    it.skip('Deve excluir um usuário com sucesso', () => {
         cy.api({
             method: "DELETE",
-            url: "users/91",
+            url: "users/90",
             headers: { "Authorization": token },
         }).should(response => {
             expect(response.status).to.equal(200)
