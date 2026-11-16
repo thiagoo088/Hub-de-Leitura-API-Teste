@@ -101,6 +101,12 @@ describe('Post - Teste de API - Gestão de usuários', () => {
 });
 
 describe('PUT - Teste de API - Gestão de usuários', () => {
+      
+    beforeEach(() => {
+        cy.geraToken("admin@biblioteca.com", "admin123").then(tkn => {
+            token = tkn
+        })
+    });
 
     it('Deve atualizar um usuário com sucesso', () => {
         cy.api({
@@ -139,6 +145,12 @@ describe('PUT - Teste de API - Gestão de usuários', () => {
 });
 
 describe('DELETE - Teste de api - Gestão de usuários', () => {
+       
+    beforeEach(() => {
+        cy.geraToken("admin@biblioteca.com", "admin123").then(tkn => {
+            token = tkn
+        })
+    });
 
     it.skip('Deve excluir um usuário com sucesso', () => {
         cy.api({
