@@ -19,7 +19,6 @@ Projeto de estudo em **QA e automação de testes de API**. Os testes validam o 
 
 > A API do Hub de Leitura roda localmente (`localhost`) e não está incluída neste repositório. Este projeto serve como demonstração do código e da abordagem de automação.
 
-## Destaques
 
 - **Testes independentes:** nos cenários de PUT e DELETE, o próprio teste cria o usuário antes de usá-lo, sem depender de IDs fixos.
 - **Dados dinâmicos:** e-mails únicos gerados com `Date.now()`, evitando conflito entre execuções.
